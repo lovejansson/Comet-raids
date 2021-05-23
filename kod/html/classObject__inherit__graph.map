@@ -1,0 +1,12 @@
+<map id="Object" name="Object">
+<area shape="rect" id="node1" title=" " alt="" coords="506,5,601,156"/>
+<area shape="rect" id="node2" href="$classDynamicObject.html" title=" " alt="" coords="281,204,479,545"/>
+<area shape="rect" id="node7" href="$classStaticObject.html" title=" " alt="" coords="731,329,853,421"/>
+<area shape="rect" id="node3" href="$classBomb.html" title=" " alt="" coords="5,711,136,891"/>
+<area shape="rect" id="node4" href="$classIceBlock.html" title=" " alt="" coords="160,674,291,927"/>
+<area shape="rect" id="node5" href="$classProjectile.html" title=" " alt="" coords="315,733,445,869"/>
+<area shape="rect" id="node6" href="$classShip.html" title=" " alt="" coords="470,593,637,1008"/>
+<area shape="rect" id="node8" href="$classBombSite.html" title=" " alt="" coords="661,755,792,847"/>
+<area shape="rect" id="node9" href="$classComet.html" title=" " alt="" coords="817,762,898,839"/>
+<area shape="rect" id="node10" href="$classExplosion.html" title=" " alt="" coords="923,755,1021,847"/>
+</map>

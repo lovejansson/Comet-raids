@@ -1,0 +1,112 @@
+\hypertarget{classObject}{}\doxysection{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+
+
+Inheritance diagram for Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classObject_ae3a028eab96defee545a9180fa7b31fa}{Object}} (sf\+::\+Vector2f const \&position)
+\item 
+virtual \mbox{\hyperlink{classObject_a226f2ae2af766b77d83c09a4d766b725}{$\sim$\+Object}} ()=default
+\item 
+bool \mbox{\hyperlink{classObject_abe0c58997b6c064e040aa139284abbcf}{is\+Alive}} () const
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classObject_add7c5a02624a3dbdf856517b18fce61f}{get\+Sprite}} () const
+\item 
+void \mbox{\hyperlink{classObject_a942ffe4b0d08c2f65fc621cfca7e4dcb}{draw}} (sf\+::\+Render\+Window \&draw\+To) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}}
+\item 
+bool \mbox{\hyperlink{classObject_ae0882ae4b03008e958b2191b4de14a00}{alive}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classObject_ae3a028eab96defee545a9180fa7b31fa}\label{classObject_ae3a028eab96defee545a9180fa7b31fa}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{Object()}{Object()}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f const \&}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObject_a226f2ae2af766b77d83c09a4d766b725}\label{classObject_a226f2ae2af766b77d83c09a4d766b725}} 
+\index{Object@{Object}!````~Object@{$\sim$Object}}
+\index{````~Object@{$\sim$Object}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{$\sim$Object()}{~Object()}}
+{\footnotesize\ttfamily virtual Object\+::$\sim$\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classObject_a942ffe4b0d08c2f65fc621cfca7e4dcb}\label{classObject_a942ffe4b0d08c2f65fc621cfca7e4dcb}} 
+\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{draw\+To }\end{DoxyParamCaption}) const}
+
+Draws the sprite of \mbox{\hyperlink{classObject}{Object}} to game window. 
+\begin{DoxyParams}{Parameters}
+{\em draw\+To} & window to render to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classObject_add7c5a02624a3dbdf856517b18fce61f}\label{classObject_add7c5a02624a3dbdf856517b18fce61f}} 
+\index{Object@{Object}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for sf\+::\+Sprite sprite. \begin{DoxyReturn}{Returns}
+sf\+::\+Sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObject_abe0c58997b6c064e040aa139284abbcf}\label{classObject_abe0c58997b6c064e040aa139284abbcf}} 
+\index{Object@{Object}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool Object\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for alive variable. \begin{DoxyReturn}{Returns}
+bool true if the \mbox{\hyperlink{classObject}{Object}} is still alive else false. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classObject_ae0882ae4b03008e958b2191b4de14a00}\label{classObject_ae0882ae4b03008e958b2191b4de14a00}} 
+\index{Object@{Object}!alive@{alive}}
+\index{alive@{alive}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily bool Object\+::alive\hspace{0.3cm}{\ttfamily [protected]}}
+
+bool to keep track of the life status of object. \mbox{\Hypertarget{classObject_a65be09abc56e93e0154c3a0e37f97579}\label{classObject_a65be09abc56e93e0154c3a0e37f97579}} 
+\index{Object@{Object}!sprite@{sprite}}
+\index{sprite@{sprite}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+sf\+::\+Sprite representing object sprite. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Object_8h}{Object.\+h}}\item 
+\mbox{\hyperlink{Object_8cpp}{Object.\+cpp}}\end{DoxyCompactItemize}

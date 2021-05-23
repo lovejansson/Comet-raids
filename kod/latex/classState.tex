@@ -1,0 +1,154 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+
+
+Inheritance diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classState_ae8135cddb4e64e0bb7d6edf3d7a4fe04}{State}} (int const \mbox{\hyperlink{classState_a4738da08d41a91fce85d5609c4774caf}{current\+Level}})
+\item 
+virtual \mbox{\hyperlink{classState_a783d52422b544bb226e13de8ecfd6ad6}{$\sim$\+State}} ()=default
+\item 
+void \mbox{\hyperlink{classState_aa85fe5702cefc6f38b2ca87ecba338a6}{on\+Key\+Pressed}} (sf\+::\+Keyboard\+::\+Key key)
+\item 
+void \mbox{\hyperlink{classState_a387aca5d81816679ec2a59bbfe322f21}{on\+Key\+Released}} (sf\+::\+Keyboard\+::\+Key key)
+\item 
+virtual \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classState_a29c5ff5817eb646715764296db9228ac}{update\+State}} (sf\+::\+View \&view, bool \&quit)=0
+\item 
+virtual void \mbox{\hyperlink{classState_a651958c6fdc816b95c8bf2fbe6f86be0}{render\+State}} (sf\+::\+Render\+Window \&draw\+To) const =0
+\item 
+std\+::map$<$ sf\+::\+Keyboard\+::\+Key, bool $>$ const  \& \mbox{\hyperlink{classState_ae8dfed276ad30f1b33765390af8e4e18}{get\+Keys}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ sf\+::\+Keyboard\+::\+Key, bool $>$ \mbox{\hyperlink{classState_af62b2f0c21298bb008ff2117777c6d55}{keys}}
+\item 
+int \mbox{\hyperlink{classState_a4738da08d41a91fce85d5609c4774caf}{current\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_ae8135cddb4e64e0bb7d6edf3d7a4fe04}\label{classState_ae8135cddb4e64e0bb7d6edf3d7a4fe04}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{int const}]{current\+Level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classState_a783d52422b544bb226e13de8ecfd6ad6}\label{classState_a783d52422b544bb226e13de8ecfd6ad6}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily virtual State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_ae8dfed276ad30f1b33765390af8e4e18}\label{classState_ae8dfed276ad30f1b33765390af8e4e18}} 
+\index{State@{State}!getKeys@{getKeys}}
+\index{getKeys@{getKeys}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getKeys()}{getKeys()}}
+{\footnotesize\ttfamily std\+::map$<$ sf\+::\+Keyboard\+::\+Key, bool $>$ const  \& State\+::get\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for the key map of the current state ( true or false ). \begin{DoxyReturn}{Returns}
+std\+::map$<$sf\+::\+Keyboard\+::\+Key, bool$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classState_aa85fe5702cefc6f38b2ca87ecba338a6}\label{classState_aa85fe5702cefc6f38b2ca87ecba338a6}} 
+\index{State@{State}!onKeyPressed@{onKeyPressed}}
+\index{onKeyPressed@{onKeyPressed}!State@{State}}
+\doxysubsubsection{\texorpdfstring{onKeyPressed()}{onKeyPressed()}}
+{\footnotesize\ttfamily void State\+::on\+Key\+Pressed (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key }\end{DoxyParamCaption})}
+
+Sets the key pressed to true in the keys map when that key is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The variable in the map to be set true. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classState_a387aca5d81816679ec2a59bbfe322f21}\label{classState_a387aca5d81816679ec2a59bbfe322f21}} 
+\index{State@{State}!onKeyReleased@{onKeyReleased}}
+\index{onKeyReleased@{onKeyReleased}!State@{State}}
+\doxysubsubsection{\texorpdfstring{onKeyReleased()}{onKeyReleased()}}
+{\footnotesize\ttfamily void State\+::on\+Key\+Released (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key }\end{DoxyParamCaption})}
+
+Sets the key pressed to false in the keys map when that key is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The variable in the map to be set false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classState_a651958c6fdc816b95c8bf2fbe6f86be0}\label{classState_a651958c6fdc816b95c8bf2fbe6f86be0}} 
+\index{State@{State}!renderState@{renderState}}
+\index{renderState@{renderState}!State@{State}}
+\doxysubsubsection{\texorpdfstring{renderState()}{renderState()}}
+{\footnotesize\ttfamily virtual void State\+::render\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{draw\+To }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual method. Renders the sprites and texts of the \mbox{\hyperlink{classState}{State}}. 
+\begin{DoxyParams}{Parameters}
+{\em draw\+To} & sf\+::\+Render\+Window reference to draw to. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGameState_a547f5d5527ac4bf8a5a267c358cc8376}{Game\+State}}, and \mbox{\hyperlink{classMenuState_afa50950ffe91a0023cf0ca3916eb2460}{Menu\+State}}.
+
+\mbox{\Hypertarget{classState_a29c5ff5817eb646715764296db9228ac}\label{classState_a29c5ff5817eb646715764296db9228ac}} 
+\index{State@{State}!updateState@{updateState}}
+\index{updateState@{updateState}!State@{State}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} State\+::update\+State (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{bool \&}]{quit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual method exact function varies between states. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em quit} & If update changes this variable to true the game ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+shared\+\_\+pointer$<$\+State$>$ to the new state to be run. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classGameState_a499bc9697a6625a058cfce12497f2af0}{Game\+State}}, \mbox{\hyperlink{classMenuState_a37118715ed0b58216597259f0eb80266}{Menu\+State}}, \mbox{\hyperlink{classPausMenuState_ad4d5e68b3f80fcc13a5a7d4a469b80de}{Paus\+Menu\+State}}, and \mbox{\hyperlink{classWinState_aee1a65766204b527332667b062645210}{Win\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classState_a4738da08d41a91fce85d5609c4774caf}\label{classState_a4738da08d41a91fce85d5609c4774caf}} 
+\index{State@{State}!currentLevel@{currentLevel}}
+\index{currentLevel@{currentLevel}!State@{State}}
+\doxysubsubsection{\texorpdfstring{currentLevel}{currentLevel}}
+{\footnotesize\ttfamily int State\+::current\+Level\hspace{0.3cm}{\ttfamily [protected]}}
+
+The current level of the game. \mbox{\Hypertarget{classState_af62b2f0c21298bb008ff2117777c6d55}\label{classState_af62b2f0c21298bb008ff2117777c6d55}} 
+\index{State@{State}!keys@{keys}}
+\index{keys@{keys}!State@{State}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily std\+::map$<$sf\+::\+Keyboard\+::\+Key, bool$>$ State\+::keys\hspace{0.3cm}{\ttfamily [protected]}}
+
+A map of keys the current state are listening to and their pressed status, true if pressed else false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{State_8h}{State.\+h}}\item 
+\mbox{\hyperlink{State_8cpp}{State.\+cpp}}\end{DoxyCompactItemize}

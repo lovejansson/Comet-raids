@@ -1,0 +1,160 @@
+\hypertarget{classMenuState}{}\doxysection{Menu\+State Class Reference}
+\label{classMenuState}\index{MenuState@{MenuState}}
+
+
+{\ttfamily \#include $<$Menu\+State.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classMenuState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classMenuState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMenuState_a24bd1b834acc63b24fa31e5853afe299}{Menu\+State}} (int const \mbox{\hyperlink{classState_a4738da08d41a91fce85d5609c4774caf}{current\+Level}}, sf\+::\+View \&view, std\+::string const \&\mbox{\hyperlink{classMenuState_ac774e43c0fa763c6650e173b03169f40}{header}})
+\item 
+virtual \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classMenuState_a37118715ed0b58216597259f0eb80266}{update\+State}} (sf\+::\+View \&view, bool \&quit) override
+\item 
+void \mbox{\hyperlink{classMenuState_afa50950ffe91a0023cf0ca3916eb2460}{render\+State}} (sf\+::\+Render\+Window \&draw\+To) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenuState_ac774e43c0fa763c6650e173b03169f40}{header}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenuState_ac06bb33caa04026243497e483fd7dc62}{enter\+Text}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenuState_a8cc983a04ab327bd43c93eeef0a2c3d6}{escape\+Text}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMenuState_aba1f0f39377f49aad9631728a6b73e76}{adjust\+View}} (sf\+::\+View \&view) const
+\item 
+void \mbox{\hyperlink{classMenuState_a3246515ffa300a3c25e5c67f545e9a40}{initialize\+Keys}} ()
+\item 
+void \mbox{\hyperlink{classMenuState_a979a5b90063f147fd1fd318b811db506}{initialize\+Text}} (sf\+::\+View \&view, std\+::string const \&text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMenuState_a24bd1b834acc63b24fa31e5853afe299}\label{classMenuState_a24bd1b834acc63b24fa31e5853afe299}} 
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{MenuState()}{MenuState()}}
+{\footnotesize\ttfamily Menu\+State\+::\+Menu\+State (\begin{DoxyParamCaption}\item[{int const}]{current\+Level,  }\item[{sf\+::\+View \&}]{view,  }\item[{std\+::string const \&}]{header }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMenuState_aba1f0f39377f49aad9631728a6b73e76}\label{classMenuState_aba1f0f39377f49aad9631728a6b73e76}} 
+\index{MenuState@{MenuState}!adjustView@{adjustView}}
+\index{adjustView@{adjustView}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{adjustView()}{adjustView()}}
+{\footnotesize\ttfamily void Menu\+State\+::adjust\+View (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Adjusts the view in the local menu by moving it and rotating it to 0. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMenuState_a3246515ffa300a3c25e5c67f545e9a40}\label{classMenuState_a3246515ffa300a3c25e5c67f545e9a40}} 
+\index{MenuState@{MenuState}!initializeKeys@{initializeKeys}}
+\index{initializeKeys@{initializeKeys}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{initializeKeys()}{initializeKeys()}}
+{\footnotesize\ttfamily void Menu\+State\+::initialize\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the keys the current state are listening to. \mbox{\Hypertarget{classMenuState_a979a5b90063f147fd1fd318b811db506}\label{classMenuState_a979a5b90063f147fd1fd318b811db506}} 
+\index{MenuState@{MenuState}!initializeText@{initializeText}}
+\index{initializeText@{initializeText}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{initializeText()}{initializeText()}}
+{\footnotesize\ttfamily void Menu\+State\+::initialize\+Text (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{std\+::string const \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the texts to be displayed in the current state. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em text} & The Header text of the \mbox{\hyperlink{classState}{State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMenuState_afa50950ffe91a0023cf0ca3916eb2460}\label{classMenuState_afa50950ffe91a0023cf0ca3916eb2460}} 
+\index{MenuState@{MenuState}!renderState@{renderState}}
+\index{renderState@{renderState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{renderState()}{renderState()}}
+{\footnotesize\ttfamily void Menu\+State\+::render\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{draw\+To }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Renders the sprites and texts of the \mbox{\hyperlink{classState}{State}}. 
+\begin{DoxyParams}{Parameters}
+{\em draw\+To} & sf\+::\+Render\+Window reference to draw to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a651958c6fdc816b95c8bf2fbe6f86be0}{State}}.
+
+\mbox{\Hypertarget{classMenuState_a37118715ed0b58216597259f0eb80266}\label{classMenuState_a37118715ed0b58216597259f0eb80266}} 
+\index{MenuState@{MenuState}!updateState@{updateState}}
+\index{updateState@{updateState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} Menu\+State\+::update\+State (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{bool \&}]{quit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the state by listening for the state relevant Keys i.\+e. Escape and Enter. Exact behaviour depends on current \mbox{\hyperlink{classMenuState}{Menu\+State}} but default is\+: If Enter is pressed the game restarts at current level. If Escape is pressed the game quits. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em quit} & If set to true the game ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+State$>$ to the new state to be run. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classState_a29c5ff5817eb646715764296db9228ac}{State}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPausMenuState_ad4d5e68b3f80fcc13a5a7d4a469b80de}{Paus\+Menu\+State}}, and \mbox{\hyperlink{classWinState_aee1a65766204b527332667b062645210}{Win\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMenuState_ac06bb33caa04026243497e483fd7dc62}\label{classMenuState_ac06bb33caa04026243497e483fd7dc62}} 
+\index{MenuState@{MenuState}!enterText@{enterText}}
+\index{enterText@{enterText}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{enterText}{enterText}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+State\+::enter\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+Text that describes the result of pressing Enter. \mbox{\Hypertarget{classMenuState_a8cc983a04ab327bd43c93eeef0a2c3d6}\label{classMenuState_a8cc983a04ab327bd43c93eeef0a2c3d6}} 
+\index{MenuState@{MenuState}!escapeText@{escapeText}}
+\index{escapeText@{escapeText}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{escapeText}{escapeText}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+State\+::escape\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+Text that describes the effect of pressing escape. \mbox{\Hypertarget{classMenuState_ac774e43c0fa763c6650e173b03169f40}\label{classMenuState_ac774e43c0fa763c6650e173b03169f40}} 
+\index{MenuState@{MenuState}!header@{header}}
+\index{header@{header}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+State\+::header\hspace{0.3cm}{\ttfamily [protected]}}
+
+Header text of the menu. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MenuState_8h}{Menu\+State.\+h}}\item 
+\mbox{\hyperlink{MenuState_8cpp}{Menu\+State.\+cpp}}\end{DoxyCompactItemize}

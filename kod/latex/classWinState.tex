@@ -1,0 +1,102 @@
+\hypertarget{classWinState}{}\doxysection{Win\+State Class Reference}
+\label{classWinState}\index{WinState@{WinState}}
+
+
+{\ttfamily \#include $<$Win\+State.\+h$>$}
+
+
+
+Inheritance diagram for Win\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classWinState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Win\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classWinState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWinState_a0e3837c0bf93e37a15e41e0975536363}{Win\+State}} (int const \mbox{\hyperlink{classState_a4738da08d41a91fce85d5609c4774caf}{current\+Level}}, sf\+::\+View \&view)
+\item 
+\mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classWinState_aee1a65766204b527332667b062645210}{update\+State}} (sf\+::\+View \&view, bool \&quit) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWinState_a933e2cdb6af2d2ba9add445d9711a728}{initialize\+Text\+Local}} (sf\+::\+View \&view, const std\+::string \&text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classWinState_a007402856130d549887acea7a70cee43}{final\+Win}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWinState_a0e3837c0bf93e37a15e41e0975536363}\label{classWinState_a0e3837c0bf93e37a15e41e0975536363}} 
+\index{WinState@{WinState}!WinState@{WinState}}
+\index{WinState@{WinState}!WinState@{WinState}}
+\doxysubsubsection{\texorpdfstring{WinState()}{WinState()}}
+{\footnotesize\ttfamily Win\+State\+::\+Win\+State (\begin{DoxyParamCaption}\item[{int const}]{current\+Level,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWinState_a933e2cdb6af2d2ba9add445d9711a728}\label{classWinState_a933e2cdb6af2d2ba9add445d9711a728}} 
+\index{WinState@{WinState}!initializeTextLocal@{initializeTextLocal}}
+\index{initializeTextLocal@{initializeTextLocal}!WinState@{WinState}}
+\doxysubsubsection{\texorpdfstring{initializeTextLocal()}{initializeTextLocal()}}
+{\footnotesize\ttfamily void Win\+State\+::initialize\+Text\+Local (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+A local variant of the Initialize\+Text method to handle local non header texts. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em text} & Header text of the \mbox{\hyperlink{classState}{State}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWinState_aee1a65766204b527332667b062645210}\label{classWinState_aee1a65766204b527332667b062645210}} 
+\index{WinState@{WinState}!updateState@{updateState}}
+\index{updateState@{updateState}!WinState@{WinState}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} Win\+State\+::update\+State (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{bool \&}]{quit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the state by listening for the state relevant Keys i.\+e. Escape and Enter. If escape the Menu shifts to Start\+Menu If enter the \mbox{\hyperlink{classState}{State}} either shifts to the next level if there is one or restarts at level 1 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em quit} & If set to true the game ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+State$>$ to the new state to be run. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classMenuState_a37118715ed0b58216597259f0eb80266}{Menu\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWinState_a007402856130d549887acea7a70cee43}\label{classWinState_a007402856130d549887acea7a70cee43}} 
+\index{WinState@{WinState}!finalWin@{finalWin}}
+\index{finalWin@{finalWin}!WinState@{WinState}}
+\doxysubsubsection{\texorpdfstring{finalWin}{finalWin}}
+{\footnotesize\ttfamily bool Win\+State\+::final\+Win\hspace{0.3cm}{\ttfamily [private]}}
+
+If current\+Level is the last level final\+Win is true else false this variable is used to change the Local texts to reflect the correct \mbox{\hyperlink{classWinState}{Win\+State}} text. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{WinState_8h}{Win\+State.\+h}}\item 
+\mbox{\hyperlink{WinState_8cpp}{Win\+State.\+cpp}}\end{DoxyCompactItemize}

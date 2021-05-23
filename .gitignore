@@ -1,0 +1,15 @@
+**~
+**'#**#'
+**.aux
+**.fls
+**.log
+**.fdb_latexmk
+**.bbl
+**.blg
+**.out
+#**#
+.#**
+**.git
+**.tex~
+kod/main
+kod/comet_raids 

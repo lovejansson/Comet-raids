@@ -1,0 +1,264 @@
+\hypertarget{classConstants}{}\doxysection{Constants Class Reference}
+\label{classConstants}\index{Constants@{Constants}}
+
+
+{\ttfamily \#include $<$Constants.\+h$>$}
+
+
+
+Collaboration diagram for Constants\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConstants__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConstants_af395b3c1d6f0577f4880a21a257aa1db}{Constants}} ()
+\item 
+sf\+::\+Texture \& \mbox{\hyperlink{classConstants_a1d7b7472e6081f499200b4abb204f1df}{get\+Level\+Texture}} (int level)
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \& \mbox{\hyperlink{classConstants_ab18fbf326475a6a255136cba88708a17}{get\+Level\+Bomb\+Sites}} (int level)
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \& \mbox{\hyperlink{classConstants_a2d4102e2427309540c11e567fda9ebe5}{get\+Player\+Location}} (int level)
+\item 
+int \mbox{\hyperlink{classConstants_af2e98002b008d92dcf2089bbbbb4056b}{get\+Level\+Timer}} (int level) const
+\item 
+int \mbox{\hyperlink{classConstants_a12c2bfc9624054df9da8e9b4a01fad35}{get\+Number\+Of\+Levels}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a93acc1deb23b309fa088b5e1d781c464}{texture\+Explosion}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a86055c252cb46b3c9a81e8d461c3e8b6}{texture\+Ice\+Block}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a2c5ccf00f09266ce12b92b4112c78f21}{texture\+Ship}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a7ee3a11e522f2cb751e9de2d7e26e359}{texture\+Bomb}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a181b529344698a1860a7710870850406}{texture\+Projectile}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classConstants_a337bf0446c21eb3c136925632b3e3286}{texture\+Bomb\+Site}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classConstants_ad304f1e62b78398973393fae851932ea}{font}}
+\item 
+long \mbox{\hyperlink{classConstants_a3879cb8a1b525c092dbcbdc40f2594f4}{tick\+Rate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classConstants}{Constants}} \mbox{\hyperlink{classConstants_abc0fb91462b3975939ebb179886d124e}{instance}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classConstants_a2a5470511ab9dc3057f5662f8ff0d8bf}{load\+Levels}} ()
+\item 
+void \mbox{\hyperlink{classConstants_aa71e5940fbf8c480bedeb110d5a89e9a}{load\+Texture}} (std\+::string const \&address)
+\item 
+void \mbox{\hyperlink{classConstants_af4671afa96af3b605275a36c8eab0934}{initialize\+Textures}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Texture $>$ \mbox{\hyperlink{classConstants_a63f7e377fdfac2f8a38b8a9f3bb7d358}{level\+Textures}}
+\item 
+std\+::vector$<$ std\+::vector$<$ sf\+::\+Vector2f $>$ $>$ \mbox{\hyperlink{classConstants_a8ea64d848f46e504c88ffa6201374a62}{bomb\+Sites}}
+\item 
+std\+::vector$<$ std\+::vector$<$ sf\+::\+Vector2f $>$ $>$ \mbox{\hyperlink{classConstants_acb6aea8f6cf13e35d689a4691d794692}{player\+Locations}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classConstants_a547453c8ee563452e7fe167f4d3ada6e}{level\+Timers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classConstants}{Constants}} holds all game constants that are not going to change mid game and needs to stay in the memory until the game ends. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConstants_af395b3c1d6f0577f4880a21a257aa1db}\label{classConstants_af395b3c1d6f0577f4880a21a257aa1db}} 
+\index{Constants@{Constants}!Constants@{Constants}}
+\index{Constants@{Constants}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{Constants()}{Constants()}}
+{\footnotesize\ttfamily Constants\+::\+Constants (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConstants_ab18fbf326475a6a255136cba88708a17}\label{classConstants_ab18fbf326475a6a255136cba88708a17}} 
+\index{Constants@{Constants}!getLevelBombSites@{getLevelBombSites}}
+\index{getLevelBombSites@{getLevelBombSites}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{getLevelBombSites()}{getLevelBombSites()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Vector2f $>$ \& Constants\+::get\+Level\+Bomb\+Sites (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+Returns the Bombsite coordinates in a vector for the indicated level. 
+\begin{DoxyParams}{Parameters}
+{\em level} & The level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$sf\+::\+Vector2f$>$ reference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConstants_a1d7b7472e6081f499200b4abb204f1df}\label{classConstants_a1d7b7472e6081f499200b4abb204f1df}} 
+\index{Constants@{Constants}!getLevelTexture@{getLevelTexture}}
+\index{getLevelTexture@{getLevelTexture}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{getLevelTexture()}{getLevelTexture()}}
+{\footnotesize\ttfamily sf\+::\+Texture \& Constants\+::get\+Level\+Texture (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+Returns a sf\+::\+Texture reference to the texture indicated by the level variable. 
+\begin{DoxyParams}{Parameters}
+{\em level} & The level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sf\+::\+Texture reference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConstants_af2e98002b008d92dcf2089bbbbb4056b}\label{classConstants_af2e98002b008d92dcf2089bbbbb4056b}} 
+\index{Constants@{Constants}!getLevelTimer@{getLevelTimer}}
+\index{getLevelTimer@{getLevelTimer}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{getLevelTimer()}{getLevelTimer()}}
+{\footnotesize\ttfamily int Constants\+::get\+Level\+Timer (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption}) const}
+
+Returns the end\+Timer duration for the indicated level. 
+\begin{DoxyParams}{Parameters}
+{\em level} & The level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConstants_a12c2bfc9624054df9da8e9b4a01fad35}\label{classConstants_a12c2bfc9624054df9da8e9b4a01fad35}} 
+\index{Constants@{Constants}!getNumberOfLevels@{getNumberOfLevels}}
+\index{getNumberOfLevels@{getNumberOfLevels}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{getNumberOfLevels()}{getNumberOfLevels()}}
+{\footnotesize\ttfamily int Constants\+::get\+Number\+Of\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the total amount of levels in the game. \begin{DoxyReturn}{Returns}
+int Number of levels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConstants_a2d4102e2427309540c11e567fda9ebe5}\label{classConstants_a2d4102e2427309540c11e567fda9ebe5}} 
+\index{Constants@{Constants}!getPlayerLocation@{getPlayerLocation}}
+\index{getPlayerLocation@{getPlayerLocation}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{getPlayerLocation()}{getPlayerLocation()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Vector2f $>$ \& Constants\+::get\+Player\+Location (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+Returns the player start coordinates in a vector for the indicated level. 
+\begin{DoxyParams}{Parameters}
+{\em level} & The level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$sf\+::\+Vector2f$>$ reference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConstants_af4671afa96af3b605275a36c8eab0934}\label{classConstants_af4671afa96af3b605275a36c8eab0934}} 
+\index{Constants@{Constants}!initializeTextures@{initializeTextures}}
+\index{initializeTextures@{initializeTextures}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{initializeTextures()}{initializeTextures()}}
+{\footnotesize\ttfamily void Constants\+::initialize\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes \mbox{\hyperlink{classObject}{Object}} textures. \mbox{\Hypertarget{classConstants_a2a5470511ab9dc3057f5662f8ff0d8bf}\label{classConstants_a2a5470511ab9dc3057f5662f8ff0d8bf}} 
+\index{Constants@{Constants}!loadLevels@{loadLevels}}
+\index{loadLevels@{loadLevels}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{loadLevels()}{loadLevels()}}
+{\footnotesize\ttfamily void Constants\+::load\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Loads level information from text file. \mbox{\Hypertarget{classConstants_aa71e5940fbf8c480bedeb110d5a89e9a}\label{classConstants_aa71e5940fbf8c480bedeb110d5a89e9a}} 
+\index{Constants@{Constants}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void Constants\+::load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Loads a png file into the level\+Textures vector. Used in the load\+Levels method. 
+\begin{DoxyParams}{Parameters}
+{\em address} & The address to the png file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classConstants_a8ea64d848f46e504c88ffa6201374a62}\label{classConstants_a8ea64d848f46e504c88ffa6201374a62}} 
+\index{Constants@{Constants}!bombSites@{bombSites}}
+\index{bombSites@{bombSites}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{bombSites}{bombSites}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$sf\+::\+Vector2f$>$ $>$ Constants\+::bomb\+Sites\hspace{0.3cm}{\ttfamily [private]}}
+
+std\+::vector with a vector for each level containing the \mbox{\hyperlink{classBombSite}{Bomb\+Site}} coordinates. \mbox{\Hypertarget{classConstants_ad304f1e62b78398973393fae851932ea}\label{classConstants_ad304f1e62b78398973393fae851932ea}} 
+\index{Constants@{Constants}!font@{font}}
+\index{font@{font}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Constants\+::font}
+
+The sf\+::\+Font for all game texts. \mbox{\Hypertarget{classConstants_abc0fb91462b3975939ebb179886d124e}\label{classConstants_abc0fb91462b3975939ebb179886d124e}} 
+\index{Constants@{Constants}!instance@{instance}}
+\index{instance@{instance}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConstants}{Constants}} Constants\+::instance\hspace{0.3cm}{\ttfamily [static]}}
+
+Declares the instance of the \mbox{\hyperlink{classConstants}{Constants}} class. \mbox{\Hypertarget{classConstants_a63f7e377fdfac2f8a38b8a9f3bb7d358}\label{classConstants_a63f7e377fdfac2f8a38b8a9f3bb7d358}} 
+\index{Constants@{Constants}!levelTextures@{levelTextures}}
+\index{levelTextures@{levelTextures}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{levelTextures}{levelTextures}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Texture$>$ Constants\+::level\+Textures\hspace{0.3cm}{\ttfamily [private]}}
+
+std\+::vector containing all the level textures. \mbox{\Hypertarget{classConstants_a547453c8ee563452e7fe167f4d3ada6e}\label{classConstants_a547453c8ee563452e7fe167f4d3ada6e}} 
+\index{Constants@{Constants}!levelTimers@{levelTimers}}
+\index{levelTimers@{levelTimers}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{levelTimers}{levelTimers}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Constants\+::level\+Timers\hspace{0.3cm}{\ttfamily [private]}}
+
+std\+::vector with a vector for each level containing the end\+Timer durations. \mbox{\Hypertarget{classConstants_acb6aea8f6cf13e35d689a4691d794692}\label{classConstants_acb6aea8f6cf13e35d689a4691d794692}} 
+\index{Constants@{Constants}!playerLocations@{playerLocations}}
+\index{playerLocations@{playerLocations}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{playerLocations}{playerLocations}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$sf\+::\+Vector2f$>$ $>$ Constants\+::player\+Locations\hspace{0.3cm}{\ttfamily [private]}}
+
+std\+::vector with a vector for each level containing the player start locations coordinates. \mbox{\Hypertarget{classConstants_a7ee3a11e522f2cb751e9de2d7e26e359}\label{classConstants_a7ee3a11e522f2cb751e9de2d7e26e359}} 
+\index{Constants@{Constants}!textureBomb@{textureBomb}}
+\index{textureBomb@{textureBomb}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureBomb}{textureBomb}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Bomb}
+
+Texture for the \mbox{\hyperlink{classBomb}{Bomb}} Class. \mbox{\Hypertarget{classConstants_a337bf0446c21eb3c136925632b3e3286}\label{classConstants_a337bf0446c21eb3c136925632b3e3286}} 
+\index{Constants@{Constants}!textureBombSite@{textureBombSite}}
+\index{textureBombSite@{textureBombSite}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureBombSite}{textureBombSite}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Bomb\+Site}
+
+Texture for the \mbox{\hyperlink{classBombSite}{Bomb\+Site}} Class. \mbox{\Hypertarget{classConstants_a93acc1deb23b309fa088b5e1d781c464}\label{classConstants_a93acc1deb23b309fa088b5e1d781c464}} 
+\index{Constants@{Constants}!textureExplosion@{textureExplosion}}
+\index{textureExplosion@{textureExplosion}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureExplosion}{textureExplosion}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Explosion}
+
+Texture for the \mbox{\hyperlink{classExplosion}{Explosion}} Animation. \mbox{\Hypertarget{classConstants_a86055c252cb46b3c9a81e8d461c3e8b6}\label{classConstants_a86055c252cb46b3c9a81e8d461c3e8b6}} 
+\index{Constants@{Constants}!textureIceBlock@{textureIceBlock}}
+\index{textureIceBlock@{textureIceBlock}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureIceBlock}{textureIceBlock}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Ice\+Block}
+
+Texture for the \mbox{\hyperlink{classIceBlock}{Ice\+Block}} Class. \mbox{\Hypertarget{classConstants_a181b529344698a1860a7710870850406}\label{classConstants_a181b529344698a1860a7710870850406}} 
+\index{Constants@{Constants}!textureProjectile@{textureProjectile}}
+\index{textureProjectile@{textureProjectile}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureProjectile}{textureProjectile}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Projectile}
+
+Texture for the \mbox{\hyperlink{classProjectile}{Projectile}} Class. \mbox{\Hypertarget{classConstants_a2c5ccf00f09266ce12b92b4112c78f21}\label{classConstants_a2c5ccf00f09266ce12b92b4112c78f21}} 
+\index{Constants@{Constants}!textureShip@{textureShip}}
+\index{textureShip@{textureShip}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{textureShip}{textureShip}}
+{\footnotesize\ttfamily sf\+::\+Texture Constants\+::texture\+Ship}
+
+Texture for the \mbox{\hyperlink{classShip}{Ship}} Class. \mbox{\Hypertarget{classConstants_a3879cb8a1b525c092dbcbdc40f2594f4}\label{classConstants_a3879cb8a1b525c092dbcbdc40f2594f4}} 
+\index{Constants@{Constants}!tickRate@{tickRate}}
+\index{tickRate@{tickRate}!Constants@{Constants}}
+\doxysubsubsection{\texorpdfstring{tickRate}{tickRate}}
+{\footnotesize\ttfamily long Constants\+::tick\+Rate}
+
+The tick\+Rate for the game in ticks per second. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Constants_8h}{Constants.\+h}}\item 
+\mbox{\hyperlink{Constants_8cpp}{Constants.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classPausMenuState}{}\doxysection{Paus\+Menu\+State Class Reference}
+\label{classPausMenuState}\index{PausMenuState@{PausMenuState}}
+
+
+{\ttfamily \#include $<$Paus\+Menu\+State.\+h$>$}
+
+
+
+Inheritance diagram for Paus\+Menu\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classPausMenuState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Paus\+Menu\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPausMenuState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPausMenuState_a12411d42f933256aae4b3e211f611bea}{Paus\+Menu\+State}} (int const \mbox{\hyperlink{classState_a4738da08d41a91fce85d5609c4774caf}{current\+Level}}, sf\+::\+View \&view, \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classPausMenuState_a77062861e58b774c3f59fa3d7a3c0a5f}{current\+Game\+State}})
+\item 
+\mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classPausMenuState_ad4d5e68b3f80fcc13a5a7d4a469b80de}{update\+State}} (sf\+::\+View \&view, bool \&quit) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} \mbox{\hyperlink{classPausMenuState_a77062861e58b774c3f59fa3d7a3c0a5f}{current\+Game\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPausMenuState_a12411d42f933256aae4b3e211f611bea}\label{classPausMenuState_a12411d42f933256aae4b3e211f611bea}} 
+\index{PausMenuState@{PausMenuState}!PausMenuState@{PausMenuState}}
+\index{PausMenuState@{PausMenuState}!PausMenuState@{PausMenuState}}
+\doxysubsubsection{\texorpdfstring{PausMenuState()}{PausMenuState()}}
+{\footnotesize\ttfamily Paus\+Menu\+State\+::\+Paus\+Menu\+State (\begin{DoxyParamCaption}\item[{int const}]{current\+Level,  }\item[{sf\+::\+View \&}]{view,  }\item[{\mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}}}]{current\+Game\+State }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPausMenuState_ad4d5e68b3f80fcc13a5a7d4a469b80de}\label{classPausMenuState_ad4d5e68b3f80fcc13a5a7d4a469b80de}} 
+\index{PausMenuState@{PausMenuState}!updateState@{updateState}}
+\index{updateState@{updateState}!PausMenuState@{PausMenuState}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} Paus\+Menu\+State\+::update\+State (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{bool \&}]{quit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the state by listening for the state relevant Keys i.\+e. Escape and Enter. If escape the Menu shifts to Start\+Menu If enter the \mbox{\hyperlink{classState}{State}} shifts back to the current \mbox{\hyperlink{classGameState}{Game\+State}}. 
+\begin{DoxyParams}{Parameters}
+{\em view} & The view to be updated. \\
+\hline
+{\em quit} & If set to true the game ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+State$>$ to the new state to be run. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classMenuState_a37118715ed0b58216597259f0eb80266}{Menu\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPausMenuState_a77062861e58b774c3f59fa3d7a3c0a5f}\label{classPausMenuState_a77062861e58b774c3f59fa3d7a3c0a5f}} 
+\index{PausMenuState@{PausMenuState}!currentGameState@{currentGameState}}
+\index{currentGameState@{currentGameState}!PausMenuState@{PausMenuState}}
+\doxysubsubsection{\texorpdfstring{currentGameState}{currentGameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{GameState_8cpp_aa8df0327acb28449e4147ed97740b620}{state\+Ptr}} Paus\+Menu\+State\+::current\+Game\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+std\+::shared\+\_\+ptr$<$\+State$>$ to the current \mbox{\hyperlink{classGameState}{Game\+State}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{PausMenuState_8h}{Paus\+Menu\+State.\+h}}\item 
+\mbox{\hyperlink{PausMenuState_8cpp}{Paus\+Menu\+State.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="GameOverState" name="GameOverState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,432,141,509"/>
+<area shape="rect" id="node2" href="$classMenuState.html" title=" " alt="" coords="17,233,129,384"/>
+<area shape="rect" id="node3" href="$classState.html" title=" " alt="" coords="6,5,141,185"/>
+</map>
