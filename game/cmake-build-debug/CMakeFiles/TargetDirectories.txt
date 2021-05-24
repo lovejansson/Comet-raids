@@ -1,0 +1,3 @@
+/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/CMakeFiles/sfml.dir
+/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,7 +1,0 @@
-<map id="StaticObject" name="StaticObject">
-<area shape="rect" id="node1" title=" " alt="" coords="140,204,263,296"/>
-<area shape="rect" id="node3" href="$classBombSite.html" title=" " alt="" coords="5,344,136,436"/>
-<area shape="rect" id="node4" href="$classComet.html" title=" " alt="" coords="161,351,242,429"/>
-<area shape="rect" id="node5" href="$classExplosion.html" title=" " alt="" coords="267,344,365,436"/>
-<area shape="rect" id="node2" href="$classObject.html" title=" " alt="" coords="154,5,249,156"/>
-</map>

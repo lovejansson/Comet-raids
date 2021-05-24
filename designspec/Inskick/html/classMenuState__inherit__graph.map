@@ -1,7 +1,0 @@
-<map id="MenuState" name="MenuState">
-<area shape="rect" id="node1" title=" " alt="" coords="175,233,289,413"/>
-<area shape="rect" id="node3" href="$classPausMenuState.html" title=" " alt="" coords="5,469,141,561"/>
-<area shape="rect" id="node4" href="$classStartMenuState.html" title=" " alt="" coords="165,476,299,553"/>
-<area shape="rect" id="node5" href="$classWinState.html" title=" " alt="" coords="323,461,466,568"/>
-<area shape="rect" id="node2" href="$classState.html" title=" " alt="" coords="165,5,299,185"/>
-</map>

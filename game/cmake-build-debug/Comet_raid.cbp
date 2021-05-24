@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Comet_raid"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sfml">
+				<Option output="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/sfml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sfml/fast">
+				<Option output="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/sfml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Bomb.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Bomb.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/BombSite.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/BombSite.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Collision.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Collision.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Comet.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Comet.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Constants.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Constants.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/DynamicObject.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/DynamicObject.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Explosion.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Explosion.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/GameState.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/GameState.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/IceBlock.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/IceBlock.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/MenuState.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/MenuState.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Object.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Object.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/PausMenuState.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/PausMenuState.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Projectile.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Projectile.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Ship.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/Ship.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/State.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/State.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/StaticObject.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/StaticObject.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/WinState.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/WinState.h">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/main.cpp">
+			<Option target="sfml"/>
+		</Unit>
+		<Unit filename="/home/chasi127/Innovativprogrammering/Programmering/tdp005_Comet_Raids/kod/main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

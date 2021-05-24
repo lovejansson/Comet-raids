@@ -1,0 +1,2 @@
+// Adress          time     player 1     bombcoords ->
+images/Bana1.png    120     396 1446     500 550     1275 550    2025 1075
