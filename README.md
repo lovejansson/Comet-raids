@@ -1,5 +1,5 @@
 # Comet raids
-A 2D game in C++ and SFML
+2D game in C++ and SFML
 
 ////////////////////////////////
 // Installationsinstruktioner //
