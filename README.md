@@ -16,10 +16,10 @@ Verifiera att images och textFiles mapparna ligger i sama katalog som den körba
 // Kontroller //
 ////////////////
 
-rotation styrs av Q ,E tagenterna 
+Rotation styrs av Q ,E tagenterna 
 
-acceleration frammåt styrs av W
+Acceleration frammåt styrs av W
 
-acceleration bakåt styrs av S
+Acceleration bakåt styrs av S
 
-acceleration i sidled styrs av A och D respektive.
+Acceleration i sidled styrs av A och D respektive.
